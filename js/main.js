@@ -5,6 +5,7 @@ let div3= document.getElementById('sla');
 let div4= document.getElementsByClassName('serie');
 let button2= document.getElementById('temp');
 const form= document.querySelector('form');
+let button3 = document.getElementById('formulario');
 button.addEventListener('click',function(){
     div.style.display = 'block';
     button.style.display = 'none';
@@ -32,7 +33,4 @@ function numtemp(a) {
       c.setAttribute("placeholder", "Quantos episódios tem essa temporada?");
       div2.appendChild(c);
     }
-}
-function aparecer(a){
-    a.className= "btn btn-danger ta1";
 }
