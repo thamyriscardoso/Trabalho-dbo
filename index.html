@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de suas séries favoritas</title>
+</head>
+<body>
+    <header id="topo">
+        <h1>Cadastro de séries</h1>
+        <nav>
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Cadastrar séries</a></li>
+                <li role="presentation"><a href="cad.html">Ver séries cadastradas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="cadastrar">Aperte aqui para começar a cadastrar suas séries</button>
+    <div class="container">
+        <form>
+            <div class="serie">
+                <label for="nome">Nome da série</label>
+                <input type="text" class="form-control" id="nome" name="nome"
+                       placeholder="Qual o nome da série?">
+            </div>
+            <div class="serie">
+                <label for="temporada">Total de temporadas</label>
+                <input type="number" min="0" class="form-control"
+                       id="qt" name="temporada"
+                       placeholder="Quantas temporadas tem?">
+            </div>
+            <div class="serie">
+                <label for="temporada">Foto que te lembre essa série</label>
+                    <img src="" alt="">
+            </div>
+            <div class="serie">
+                <label for="temporada">Música preferida da trilha sonora</label>
+                <input type="file" name="musica" accept="audio/*">
+            </div>
+            <button type="button" id='temp'>Pronto!</button>
+            <div id="sla">
+            </div>
+            <div id="ta">
+                <a href="cad.html" id="formulario" role="button" aria-pressed="true">Finalizar</a>
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
